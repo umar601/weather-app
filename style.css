@@ -1,0 +1,156 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #72edf2 0%, #5151e5 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #5151e5;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 0 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #3a3ac7;
+    transform: translateY(-2px);
+}
+
+.display {
+    text-align: center;
+}
+
+/* Location Row */
+.location-row {
+    margin-bottom: 15px;
+}
+.location-row h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #5151e5;
+}
+.region-country {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Weather Condition Row */
+.weather-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+.weather-row img {
+    width: 80px;
+    height: 80px;
+}
+#condition {
+    font-size: 20px;
+    margin: 0;
+    text-transform: capitalize;
+}
+#lastupdated {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0 0;
+}
+
+/* Temperature Row */
+.temp-row {
+    margin: 20px 0;
+}
+#tempinc {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    color: #5151e5;
+}
+#tempinf {
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    color: #666;
+}
+
+/* Details Row */
+.details-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+}
+.detail-item span:first-child {
+    font-size: 14px;
+    color: #666;
+}
+.detail-item span:last-child {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .card {
+        width: 95%;
+        padding: 20px;
+    }
+    form {
+        flex-direction: column;
+    }
+    button {
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 12px;
+    }
+    .details-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
